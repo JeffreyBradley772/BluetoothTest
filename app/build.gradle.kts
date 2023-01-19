@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.example.bluetoothtest"
-    compileSdk = 32
+    compileSdk = 33
 
     defaultConfig {
         applicationId = "com.example.bluetoothtest"
         minSdk = 28
-        targetSdk = 32
+        targetSdk = 33
         versionCode = 1
         versionName = "1.0"
 
@@ -67,4 +67,10 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling:1.1.1")
     debugImplementation("androidx.compose.ui:ui-test-manifest:1.1.1")
     implementation("com.github.mik3y:usb-serial-for-android:3.4.6")
+    implementation(project(":higherground.lib.satpaq"))
+    implementation("no.nordicsemi.android.support.v18:scanner:1.3.1")
+    implementation("no.nordicsemi.android:dfu:2.0.2")
+    implementation("no.nordicsemi.android:ble:2.1.0")
+    implementation("androidx.compose.runtime:runtime-livedata:1.3.3")
+
 }
