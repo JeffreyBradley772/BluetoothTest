@@ -36,7 +36,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             MyApp {
-                MyScreenContent(navController = findNavController())
+//                MyScreenContent(navController = findNavController())
             }
         }
     }
@@ -59,7 +59,7 @@ fun MyScreenContent(navController: NavController) {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Button(onClick = {
-            navController.navigate()
+//            navController.navigate()
         }) {
             Text("Button")
         }
