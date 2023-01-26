@@ -72,5 +72,6 @@ dependencies {
     implementation("no.nordicsemi.android:dfu:2.0.2")
     implementation("no.nordicsemi.android:ble:2.1.0")
     implementation("androidx.compose.runtime:runtime-livedata:1.3.3")
+    implementation("androidx.compose.runtime:runtime-rxjava3:1.3.2")
 
 }

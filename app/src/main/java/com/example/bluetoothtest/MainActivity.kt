@@ -11,16 +11,20 @@ import com.example.bluetoothtest.ui.theme.BluetoothTestTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        requestBLEPermission()
+        setContent {
+            BluetoothTestTheme {
+                BluetoothApp()
+            }
+        }
+    }
+
+    fun requestBLEPermission() {
         ActivityCompat.requestPermissions(
             this, arrayOf(
                 Manifest.permission.ACCESS_FINE_LOCATION,
                 Manifest.permission.ACCESS_COARSE_LOCATION
             ), 1
         )
-        setContent {
-            BluetoothTestTheme {
-                BluetoothApp()
-            }
-        }
     }
 }
